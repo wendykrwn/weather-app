@@ -1,0 +1,81 @@
+.main{
+    position: relative;
+    background-color: #1E213A;
+    width: 450px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #A09FB1;
+    overflow: hidden;
+}
+
+.places{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:0 40px 0 40px; 
+}
+.places div:last-of-type{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #6E707A;
+}
+
+.images{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgImage{
+    position: absolute;
+    width: 750px;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.1;
+}
+
+.bgImage>div {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.temperature>span,.state{
+    font-size: 36px;
+}
+
+.temperature>span:first-of-type{
+    color:#E7E7EB;
+    font-size: 144px;
+}
+
+.dates,.location{
+    font-size: 18px;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.location::before{
+    background-image: url("/icon-location.png");
+    background-size: 20px 20px;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+
+@media only screen and (max-width : 900px) {
+    .main{
+        width: 100vw;
+    }
+}

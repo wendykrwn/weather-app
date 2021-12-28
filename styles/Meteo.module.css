@@ -1,0 +1,50 @@
+.meteo {
+    /* display: grid;
+    grid-template-columns: 450px 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    color: #E7E7EB;
+    background: #100E1D;
+    width: 100vw;
+}
+
+.details{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: calc(100vw - 500px);
+    max-width: 100vw;
+}
+
+.details .semaines{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.footer a{
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 500px) {
+    .details .semaines{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    .details{
+        width: 100vw;
+        justify-content: center;
+    }
+    
+    .detailsContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
