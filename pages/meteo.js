@@ -38,7 +38,7 @@ const Meteo = () => {
     const woeid = 615702;
 
     useEffect(() => {
-         fetch(`${urlApi}/${woeid}`)
+         fetch(`${corsAnywhere}${urlApi}/${woeid}`)
         .then((response) => response.json())
         .then(dataWeather => {
             setData(dataWeather.consolidated_weather);
@@ -68,7 +68,7 @@ const Meteo = () => {
 
     const {
         the_temp = 0,
-        weather_state_abbr = "",
+        weather_state_abbr = "ni",
         applicable_date = "",
         weather_state_name = "",
         wind_speed = 0,
