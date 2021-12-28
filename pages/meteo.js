@@ -38,7 +38,7 @@ const Meteo = () => {
     const woeid = 615702;
 
     useEffect(() => {
-         fetch(`${corsAnywhere}${urlApi}/${woeid}`)
+         fetch(`${urlApi}/${woeid}`)
         .then((response) => response.json())
         .then(dataWeather => {
             setData(dataWeather.consolidated_weather);
